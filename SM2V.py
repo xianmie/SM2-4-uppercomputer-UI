@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'src\SM2.ui'
+# Form implementation generated from reading ui file 'src\SM2V.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,15 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(807, 603)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.plainTextEdit = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit.setGeometry(QtCore.QRect(50, 50, 701, 101))
+        self.plainTextEdit.setGeometry(QtCore.QRect(50, 60, 701, 391))
         self.plainTextEdit.setObjectName("plainTextEdit")
-        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(50, 190, 701, 261))
-        self.textBrowser.setObjectName("textBrowser")
         self.pushButton_start = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_start.setGeometry(QtCore.QRect(140, 490, 171, 51))
         self.pushButton_start.setObjectName("pushButton_start")
@@ -30,11 +27,8 @@ class Ui_MainWindow(object):
         self.pushButton_return.setGeometry(QtCore.QRect(500, 490, 171, 51))
         self.pushButton_return.setObjectName("pushButton_return")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(50, 30, 72, 15))
+        self.label_3.setGeometry(QtCore.QRect(50, 30, 121, 21))
         self.label_3.setObjectName("label_3")
-        self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(50, 170, 72, 15))
-        self.label_4.setObjectName("label_4")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -45,9 +39,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "SM2测试"))
-        self.plainTextEdit.setPlaceholderText(_translate("MainWindow", "请在此输入测试数据"))
-        self.pushButton_start.setText(_translate("MainWindow", "测试"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "SM2验签"))
+        self.plainTextEdit.setPlaceholderText(_translate("MainWindow", "请在此输入待验签数据"))
+        self.pushButton_start.setText(_translate("MainWindow", "验签"))
         self.pushButton_return.setText(_translate("MainWindow", "返回"))
-        self.label_3.setText(_translate("MainWindow", "明文："))
-        self.label_4.setText(_translate("MainWindow", "返回结果："))
+        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">待验签数据：</span></p></body></html>"))

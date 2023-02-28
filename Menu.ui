@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>410</width>
-    <height>407</height>
+    <width>416</width>
+    <height>546</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,11 +49,11 @@
     <string>密钥注充</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_SM2_2">
+  <widget class="QPushButton" name="pushButton_SM2E">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>170</y>
+     <y>160</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -64,14 +64,14 @@
     </font>
    </property>
    <property name="text">
-    <string>SM2测试</string>
+    <string>SM2加密</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_SM4D">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>310</y>
+     <y>460</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -89,7 +89,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>240</y>
+     <y>400</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -101,6 +101,60 @@
    </property>
    <property name="text">
     <string>SM4加密</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SM2D">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>220</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SM2解密</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SM2S">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SM2签名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SM2V">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>340</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SM2验签</string>
    </property>
   </widget>
  </widget>
