@@ -3,12 +3,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox, QStatusBar
 from PyQt5.QtCore import QTimer
 from PyQt5.QtCore import Qt
-
+from qt_material import apply_stylesheet
 import serial
 import serial.tools.list_ports
 
 from src import Menu, SM2En, SM2De, SM2S, SM2V, WriteKey, SM4De, SM4En
-
 
 class WriteKey(WriteKey.Ui_MainWindow, QMainWindow):
     def __init__(self):
@@ -32,7 +31,7 @@ class WriteKey(WriteKey.Ui_MainWindow, QMainWindow):
         try:
             self.ser.open()
         except:
-            QMessageBox.warning(self, "错误", "无法打开此串口！")
+            QMessageBox.critical(self, "错误", "无法打开此串口！")
             return
 
         if self.ser.isOpen():
@@ -684,6 +683,8 @@ class Menu(Menu.Ui_Menu, QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+
+    apply_stylesheet(app, theme='dark_cyan.xml')
     Menu_window = Menu()
     Menu_window.show()
     sys.exit(app.exec_())

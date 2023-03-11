@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'src\sm4De.ui'
+# Form implementation generated from reading ui file 'src\SM4De.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -15,6 +15,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 607)
+        MainWindow.setWindowIcon(QtGui.QIcon("C:/Users/young/PycharmProjects/myuart/src/3.png"))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton_return = QtWidgets.QPushButton(self.centralwidget)
@@ -24,10 +25,10 @@ class Ui_MainWindow(object):
         self.pushButton_start.setGeometry(QtCore.QRect(140, 500, 171, 51))
         self.pushButton_start.setObjectName("pushButton_start")
         self.plainTextEdit_handle = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit_handle.setGeometry(QtCore.QRect(50, 140, 701, 31))
+        self.plainTextEdit_handle.setGeometry(QtCore.QRect(50, 140, 701, 41))
         self.plainTextEdit_handle.setObjectName("plainTextEdit_handle")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(360, 420, 41, 16))
+        self.label_9.setGeometry(QtCore.QRect(360, 440, 41, 16))
         self.label_9.setObjectName("label_9")
         self.label_8 = QtWidgets.QLabel(self.centralwidget)
         self.label_8.setGeometry(QtCore.QRect(50, 120, 91, 16))
@@ -36,7 +37,7 @@ class Ui_MainWindow(object):
         self.label_7.setGeometry(QtCore.QRect(50, 30, 72, 15))
         self.label_7.setObjectName("label_7")
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(50, 350, 701, 61))
+        self.textBrowser.setGeometry(QtCore.QRect(50, 350, 701, 81))
         self.textBrowser.setObjectName("textBrowser")
         self.plainTextEdit = QtWidgets.QPlainTextEdit(self.centralwidget)
         self.plainTextEdit.setGeometry(QtCore.QRect(50, 50, 701, 61))
@@ -45,16 +46,16 @@ class Ui_MainWindow(object):
         self.label_10.setGeometry(QtCore.QRect(50, 220, 191, 31))
         self.label_10.setObjectName("label_10")
         self.textBrowser_mode = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_mode.setGeometry(QtCore.QRect(50, 280, 131, 31))
+        self.textBrowser_mode.setGeometry(QtCore.QRect(50, 270, 131, 41))
         self.textBrowser_mode.setObjectName("textBrowser_mode")
         self.textBrowser_datalen = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_datalen.setGeometry(QtCore.QRect(210, 280, 131, 31))
+        self.textBrowser_datalen.setGeometry(QtCore.QRect(210, 270, 131, 41))
         self.textBrowser_datalen.setObjectName("textBrowser_datalen")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(240, 320, 72, 15))
         self.label.setObjectName("label")
         self.textBrowser_handle = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_handle.setGeometry(QtCore.QRect(370, 280, 121, 31))
+        self.textBrowser_handle.setGeometry(QtCore.QRect(370, 270, 121, 41))
         self.textBrowser_handle.setObjectName("textBrowser_handle")
         self.label_11 = QtWidgets.QLabel(self.centralwidget)
         self.label_11.setGeometry(QtCore.QRect(410, 320, 51, 16))

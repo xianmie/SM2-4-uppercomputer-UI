@@ -9,54 +9,50 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtGui import QIcon
 
 
 class Ui_Menu(object):
     def setupUi(self, Menu):
         Menu.setObjectName("Menu")
         Menu.resize(416, 546)
+        Menu.setWindowIcon(QtGui.QIcon("C:/Users/young/PycharmProjects/myuart/src/3.png"))
         self.label_3 = QtWidgets.QLabel(Menu)
-        self.label_3.setGeometry(QtCore.QRect(70, 30, 271, 51))
+        self.label_3.setGeometry(QtCore.QRect(115, 30, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(20)
+        self.setStyleSheet("QLabel{font-size:26px;font-weight:normal;font-family:Arial;}")
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
+
         self.pushButton_WK = QtWidgets.QPushButton(Menu)
         self.pushButton_WK.setGeometry(QtCore.QRect(140, 100, 121, 41))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.pushButton_WK.setFont(font)
         self.pushButton_WK.setObjectName("pushButton_WK")
+
         self.pushButton_SM2E = QtWidgets.QPushButton(Menu)
         self.pushButton_SM2E.setGeometry(QtCore.QRect(140, 160, 121, 41))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.pushButton_SM2E.setFont(font)
         self.pushButton_SM2E.setObjectName("pushButton_SM2E")
-        self.pushButton_SM4D = QtWidgets.QPushButton(Menu)
-        self.pushButton_SM4D.setGeometry(QtCore.QRect(140, 460, 121, 41))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.pushButton_SM4D.setFont(font)
-        self.pushButton_SM4D.setObjectName("pushButton_SM4D")
-        self.pushButton_SM4E = QtWidgets.QPushButton(Menu)
-        self.pushButton_SM4E.setGeometry(QtCore.QRect(140, 400, 121, 41))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.pushButton_SM4E.setFont(font)
-        self.pushButton_SM4E.setObjectName("pushButton_SM4E")
+
         self.pushButton_SM2D = QtWidgets.QPushButton(Menu)
         self.pushButton_SM2D.setGeometry(QtCore.QRect(140, 220, 121, 41))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.pushButton_SM2D.setFont(font)
         self.pushButton_SM2D.setObjectName("pushButton_SM2D")
+
         self.pushButton_SM2S = QtWidgets.QPushButton(Menu)
         self.pushButton_SM2S.setGeometry(QtCore.QRect(140, 280, 121, 41))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.pushButton_SM2S.setFont(font)
         self.pushButton_SM2S.setObjectName("pushButton_SM2S")
+
         self.pushButton_SM2V = QtWidgets.QPushButton(Menu)
         self.pushButton_SM2V.setGeometry(QtCore.QRect(140, 340, 121, 41))
         font = QtGui.QFont()
@@ -64,12 +60,26 @@ class Ui_Menu(object):
         self.pushButton_SM2V.setFont(font)
         self.pushButton_SM2V.setObjectName("pushButton_SM2V")
 
+        self.pushButton_SM4E = QtWidgets.QPushButton(Menu)
+        self.pushButton_SM4E.setGeometry(QtCore.QRect(140, 400, 121, 41))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.pushButton_SM4E.setFont(font)
+        self.pushButton_SM4E.setObjectName("pushButton_SM4E")
+
+        self.pushButton_SM4D = QtWidgets.QPushButton(Menu)
+        self.pushButton_SM4D.setGeometry(QtCore.QRect(140, 460, 121, 41))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.pushButton_SM4D.setFont(font)
+        self.pushButton_SM4D.setObjectName("pushButton_SM4D")
+
         self.retranslateUi(Menu)
         QtCore.QMetaObject.connectSlotsByName(Menu)
 
     def retranslateUi(self, Menu):
         _translate = QtCore.QCoreApplication.translate
-        Menu.setWindowTitle(_translate("Menu", "Form"))
+        Menu.setWindowTitle(_translate("Menu", "Menu"))
         self.label_3.setText(_translate("Menu", "******菜单******"))
         self.pushButton_WK.setText(_translate("Menu", "密钥注充"))
         self.pushButton_SM2E.setText(_translate("Menu", "SM2加密"))
